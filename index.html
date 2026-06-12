@@ -245,17 +245,16 @@
   footer .logo{font-family:var(--serif);font-size:18px;color:var(--gold-light);letter-spacing:.04em}
   footer .en{color:var(--muted);font-size:12px;letter-spacing:.28em;text-transform:uppercase;margin-top:6px}
   footer .cp{color:var(--muted);font-size:12px;margin-top:20px;opacity:.7}
-  .cnfcd{margin:26px auto 0;max-width:380px}
-  .cnfcd summary{cursor:pointer;list-style:none;font-size:13px;color:var(--muted);
-    padding:11px 17px;border:1px solid var(--line);border-radius:99px;display:inline-block;
+  .cnfcd{margin:14px 0 0}
+  .cnfcd summary{cursor:pointer;list-style:none;font-size:14px;color:var(--text);
+    padding:14px 18px;border:1px solid var(--line);border-radius:14px;display:block;text-align:center;
     transition:border-color .2s ease,background .2s ease}
   .cnfcd summary::-webkit-details-marker{display:none}
   .cnfcd summary:hover,.cnfcd[open] summary{border-color:var(--gold);background:rgba(203,162,78,.07)}
   .cnfcd summary .tag{color:var(--gold-light);font-weight:700;letter-spacing:.08em}
-  .cnfcd img{margin:18px auto 0;max-width:330px;width:100%;border-radius:14px;
-    border:1px solid var(--line);display:block}
-  .cnfcd-link{display:inline-block;margin-top:14px;font-size:13px;color:var(--gold-light);
-    border:1px solid var(--gold);border-radius:99px;padding:9px 18px;letter-spacing:.04em;
+  .cnfcd img{margin:14px 0 0;width:100%;border-radius:14px;border:1px solid var(--line);display:block}
+  .cnfcd-link{display:block;text-align:center;margin-top:12px;font-size:13.5px;color:var(--gold-light);
+    border:1px solid var(--gold);border-radius:99px;padding:12px 18px;letter-spacing:.04em;
     transition:background .2s ease}
   .cnfcd-link:hover{background:rgba(203,162,78,.12)}
 
@@ -270,7 +269,7 @@
     .statement-grid{grid-template-columns:1.1fr .9fr;align-items:center;gap:52px}
     .v-card{padding:28px 30px}
     .about-grid{grid-template-columns:1fr 1.15fr;align-items:start;gap:46px}
-    .about-photo{position:sticky;top:40px}
+    .about-left{position:sticky;top:40px}
     .qr-grid{grid-template-columns:repeat(4,1fr);max-width:none}
   }
   @media(prefers-reduced-motion:reduce){
@@ -366,7 +365,14 @@
     </div>
     <p class="about-lead reveal">我不是一開始就務農的。<b>十年、橫跨三國</b>的創業路，讓我把材料工程的精準、跨國 0→1 的膽識，全帶進了這片溫室。</p>
     <div class="about-grid">
-      <div class="about-photo reveal"><img src="assets/robert-lettuce.jpeg" alt="羅伯特身著深綠西裝、手持生菜的形象照"></div>
+      <div class="about-left">
+        <div class="about-photo reveal"><img src="assets/robert-lettuce.jpeg" alt="羅伯特身著深綠西裝、手持生菜的形象照"></div>
+        <details class="cnfcd reveal">
+          <summary><span class="tag">CNFCD</span>　29 天瘦 4.2 公斤，包含 3.5 公斤脂肪</summary>
+          <img src="assets/cnfcd-ba.jpg" alt="羅伯特參加微康健康 CNFCD，29 天減重 4.2 公斤、減脂 3.5 公斤前後對比">
+          <a class="cnfcd-link" href="https://www.yellowfan.com.tw/day21" target="_blank" rel="noopener">CNFCD 健康顧問 →</a>
+        </details>
+      </div>
       <div>
         <ol class="timeline reveal">
           <li><span class="dot"></span>
@@ -462,11 +468,6 @@
   <div class="logo">羅伯特農業科技</div>
   <div class="en">Robert Horti-Tech</div>
   <div class="cp">© 2026 邱彥霖 Robert ・ 羅伯特農業科技</div>
-  <details class="cnfcd">
-    <summary><span class="tag">CNFCD</span>　29 天瘦 4.2 公斤，包含 3.5 公斤脂肪</summary>
-    <img src="assets/cnfcd-ba.jpg" alt="羅伯特參加微康健康 CNFCD，29 天減重 4.2 公斤、減脂 3.5 公斤前後對比">
-    <a class="cnfcd-link" href="https://www.yellowfan.com.tw/day21" target="_blank" rel="noopener">CNFCD 健康顧問 →</a>
-  </details>
 </footer>
 
 <script>

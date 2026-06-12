@@ -9,10 +9,12 @@ Repo：`Robbiechiu/about-robert`（GitHub，public）
 
 ## 2026-06-13
 
-### 頁尾加入 CNFCD（微康健康）前後對比
-- 頁尾膠囊：「**CNFCD** 29 天瘦 4.2 公斤，包含 3.5 公斤脂肪」，點 CNFCD 用 `<details>` 展開業主本人前後對比圖（`assets/cnfcd-ba.jpg`）。
+### 加入 CNFCD（微康健康）前後對比
+- 位置：「關於我」段、**手持生菜形象照（robert-lettuce）正下方**（`.about-left` 內），寬度與照片同寬。
+- 收合：膠囊「**CNFCD** 29 天瘦 4.2 公斤，包含 3.5 公斤脂肪」，點 CNFCD 用 `<details>` 展開業主本人前後對比圖（`assets/cnfcd-ba.jpg`）。
 - 圖下方連結：「CNFCD 健康顧問 →」→ <https://www.yellowfan.com.tw/day21>。
 - 業主決定放在這張農業科技名片上（個人健康紀錄／微康顧問身分）。
+- （初版曾放頁尾且偏小，當天即依業主要求移到照片下方並放大同寬。）
 
 ### 社群區 3＋3 排版
 - 六個社群連結改成固定兩排、每排三個：
