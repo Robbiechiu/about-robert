@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>邱彥霖 Robert ｜ 羅伯特農業科技 Robert Horti-Tech</title>
+<meta name="description" content="生菜王子・羅伯特農場創辦人。打造全環控與自動化農業，改變農業的遊戲規則。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600;700;900&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0c1610;
+    --bg-2:#10211a;
+    --card:#15271e;
+    --green:#1f7a44;
+    --green-bright:#2e9d57;
+    --green-deep:#0d3a22;
+    --gold:#cba24e;
+    --gold-light:#e7cd8a;
+    --text:#f1ede1;
+    --muted:#9fb0a4;
+    --line:rgba(231,205,138,.16);
+    --serif:"Noto Serif TC",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+    --maxw:920px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:var(--sans);
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+  .serif{font-family:var(--serif)}
+  .eyebrow{
+    font-size:13px;letter-spacing:.32em;text-transform:uppercase;
+    color:var(--gold);font-weight:500;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;min-height:100svh;
+    display:flex;flex-direction:column;justify-content:flex-end;
+    padding:0 0 11vh;overflow:hidden;
+  }
+  .hero__bg{position:absolute;inset:0;z-index:0}
+  .hero__bg img{width:100%;height:100%;object-fit:cover;object-position:42% center;opacity:.92}
+  .hero__bg::after{
+    content:"";position:absolute;inset:0;
+    background:
+      linear-gradient(180deg,rgba(12,22,16,.55) 0%,rgba(12,22,16,.15) 32%,rgba(12,22,16,.78) 78%,var(--bg) 100%),
+      radial-gradient(120% 80% at 50% 120%,rgba(13,58,34,.65),transparent 60%);
+  }
+  .hero__inner{position:relative;z-index:1}
+  .hero .eyebrow{margin-bottom:18px}
+  .hero__brand{margin-bottom:22px;line-height:1.4}
+  .hero__brand .zh{display:block;font-family:var(--sans);font-weight:600;
+    font-size:clamp(22px,6.6vw,34px);letter-spacing:.18em;color:var(--gold);
+    text-shadow:0 2px 18px rgba(0,0,0,.5)}
+  .hero__brand .en{display:block;margin-top:7px;font-size:clamp(12px,3.6vw,16px);
+    font-weight:500;letter-spacing:.36em;text-transform:uppercase;color:var(--gold)}
+  .hero h1{
+    font-family:var(--serif);font-weight:900;
+    font-size:clamp(46px,15vw,104px);line-height:1.02;
+    letter-spacing:.02em;
+    text-shadow:0 4px 34px rgba(0,0,0,.5);
+  }
+  .hero h1 .en{
+    display:block;font-size:clamp(15px,4.3vw,24px);font-weight:500;
+    letter-spacing:.42em;color:var(--gold-light);margin-top:20px;
+    text-transform:uppercase;text-shadow:none;
+  }
+  .hero__name{
+    margin-top:22px;font-size:clamp(17px,4.6vw,21px);font-weight:300;color:var(--text);
+  }
+  .hero__name b{font-weight:500}
+  .hero__tag{
+    margin-top:8px;color:var(--muted);font-size:15px;
+  }
+  .scrollcue{
+    position:absolute;left:50%;bottom:26px;transform:translateX(-50%);
+    z-index:2;display:flex;flex-direction:column;align-items:center;gap:7px;
+    color:var(--gold);font-size:11px;letter-spacing:.25em;opacity:.85;
+  }
+  .scrollcue span{width:1px;height:34px;background:linear-gradient(var(--gold),transparent);animation:cue 1.8s ease-in-out infinite}
+  @keyframes cue{0%,100%{transform:scaleY(.4);opacity:.4}50%{transform:scaleY(1);opacity:1}}
+
+  /* ---------- SECTION SHELL ---------- */
+  section{padding:86px 0;position:relative}
+  .sec-head{margin-bottom:42px}
+  .sec-head .eyebrow{display:block;margin-bottom:14px}
+  .sec-head h2{
+    font-family:var(--serif);font-weight:700;
+    font-size:clamp(27px,6.5vw,40px);line-height:1.25;letter-spacing:.02em;
+  }
+  .hr-gold{width:46px;height:2px;background:var(--gold);margin-top:18px;border:0}
+
+  /* ---------- STATEMENT ---------- */
+  .statement{background:linear-gradient(180deg,var(--bg),var(--bg-2))}
+  .statement .quote{
+    font-family:var(--serif);font-weight:600;
+    font-size:clamp(25px,6.6vw,42px);line-height:1.55;letter-spacing:.02em;
+  }
+  .statement .quote .mark{color:var(--gold);font-size:1.15em;line-height:0}
+  .statement .quote em{font-style:normal;color:var(--gold-light)}
+  .statement .by{margin-top:26px;color:var(--muted);font-size:15px;letter-spacing:.06em}
+  .statement-grid{display:grid;gap:34px}
+  .statement-photo{border-radius:18px;overflow:hidden;border:1px solid var(--line);
+    box-shadow:0 22px 55px rgba(0,0,0,.42);background:#eef0ea;align-self:center}
+  .statement-photo img{width:100%;height:auto;display:block}
+
+  /* ---------- STATS ---------- */
+  .stats{background:var(--bg-2)}
+  .stat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+  .stat{
+    background:var(--card);border:1px solid var(--line);border-radius:16px;
+    padding:26px 20px;position:relative;overflow:hidden;
+  }
+  .stat::before{content:"";position:absolute;left:0;top:0;width:100%;height:2px;
+    background:linear-gradient(90deg,var(--gold),transparent)}
+  .stat .num{font-family:var(--serif);font-weight:700;color:var(--gold-light);
+    font-size:clamp(34px,9vw,46px);line-height:1;letter-spacing:.01em}
+  .stat .num small{font-size:.5em;font-weight:500;margin-left:3px}
+  .stat .label{margin-top:12px;font-size:14.5px;color:var(--text);font-weight:500}
+  .stat .sub{margin-top:3px;font-size:12.5px;color:var(--muted)}
+  .stat .num-star{width:46px;height:46px;display:block;color:var(--gold-light);
+    filter:drop-shadow(0 2px 8px rgba(203,162,78,.35))}
+  .stat .num-star + .num-star{display:inline-block;width:34px;height:34px;margin-left:-4px;opacity:.92}
+
+  /* ---------- VENTURES ---------- */
+  .ventures{background:var(--bg)}
+  .v-list{display:grid;gap:14px}
+  .v-card{
+    display:flex;gap:18px;align-items:flex-start;
+    background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 22px;
+    transition:transform .25s ease,border-color .25s ease;
+  }
+  .v-card:hover{transform:translateY(-3px);border-color:rgba(231,205,138,.4)}
+  .v-card .tag{
+    flex:none;font-family:var(--serif);font-weight:700;color:var(--green-bright);
+    font-size:13px;border:1px solid var(--green);border-radius:99px;padding:5px 13px;margin-top:3px;
+    white-space:nowrap;
+  }
+  .v-card h3{font-family:var(--serif);font-size:20px;font-weight:600;letter-spacing:.02em}
+  .v-card .en{color:var(--gold);font-size:12.5px;letter-spacing:.12em;margin:2px 0 9px}
+  .v-card p{color:var(--muted);font-size:14.5px}
+  .v-note{margin-top:24px;padding:20px 22px;border-left:2px solid var(--gold);
+    background:linear-gradient(90deg,rgba(203,162,78,.08),transparent);
+    color:var(--text);font-size:15px;border-radius:0 12px 12px 0}
+  .v-note b{color:var(--gold-light);font-weight:600}
+
+  /* ---------- ABOUT ---------- */
+  .about{background:linear-gradient(180deg,var(--bg),var(--bg-2))}
+  .about-grid{display:grid;gap:30px}
+  .about-photo{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line)}
+  .about-photo img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center bottom}
+  .about-photo::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg,transparent 55%,rgba(12,22,16,.55))}
+  .traits{list-style:none;display:grid;gap:16px}
+  .traits li{display:flex;gap:14px;align-items:flex-start;font-size:15.5px}
+  .traits .ic{flex:none;width:38px;height:38px;border-radius:11px;display:grid;place-items:center;
+    background:var(--green-deep);border:1px solid var(--line)}
+  .traits .ic svg{width:19px;height:19px;stroke:var(--gold-light)}
+  .traits b{font-family:var(--serif);font-weight:600;display:block;margin-bottom:1px}
+  .traits span.d{color:var(--muted);font-size:13.5px}
+  .origin{margin-top:8px;font-size:15.5px;color:var(--text);
+    border-top:1px solid var(--line);padding-top:24px;line-height:1.85}
+  .origin b{color:var(--gold-light)}
+  .about-lead{font-size:16px;color:var(--text);margin:-14px 0 34px;line-height:1.85}
+  .about-lead b{color:var(--gold-light);font-weight:600}
+  .timeline{list-style:none;position:relative;padding-left:28px;display:grid;gap:24px}
+  .timeline::before{content:"";position:absolute;left:7px;top:8px;bottom:10px;width:2px;
+    background:linear-gradient(var(--gold),rgba(203,162,78,.12))}
+  .timeline li{position:relative}
+  .timeline .dot{position:absolute;left:-28px;top:3px;width:16px;height:16px;border-radius:50%;
+    background:var(--bg);border:2px solid var(--gold);box-shadow:0 0 0 4px rgba(203,162,78,.12)}
+  .timeline .yr{display:block;color:var(--gold);font-size:11.5px;letter-spacing:.22em;
+    text-transform:uppercase;margin-bottom:3px;font-weight:500}
+  .timeline b{font-family:var(--serif);font-weight:600;font-size:17px;display:block;line-height:1.4}
+  .timeline p{color:var(--muted);font-size:14px;margin-top:5px}
+  .about-side{margin-top:34px;border-top:1px solid var(--line);padding-top:26px}
+  .side-title{font-family:var(--serif);color:var(--gold-light);font-size:14px;
+    letter-spacing:.14em;margin-bottom:18px}
+
+  /* ---------- CONTACT ---------- */
+  .contact{background:var(--bg-2);text-align:center}
+  .vbtn{
+    display:inline-flex;align-items:center;gap:11px;
+    background:linear-gradient(135deg,var(--gold),var(--gold-light));
+    color:#241a06;font-weight:700;font-size:16.5px;
+    padding:16px 30px;border-radius:99px;border:0;cursor:pointer;
+    font-family:var(--sans);letter-spacing:.04em;
+    box-shadow:0 10px 30px rgba(203,162,78,.28);
+    transition:transform .2s ease,box-shadow .2s ease;
+  }
+  .vbtn:hover{transform:translateY(-2px);box-shadow:0 14px 38px rgba(203,162,78,.4)}
+  .vbtn svg{width:20px;height:20px;stroke:#241a06}
+  .vhint{margin-top:13px;color:var(--muted);font-size:13px}
+
+  .info{display:grid;gap:11px;max-width:430px;margin:42px auto 0;text-align:left}
+  .info a,.info .row{
+    display:flex;align-items:center;gap:14px;
+    background:var(--card);border:1px solid var(--line);border-radius:13px;
+    padding:15px 18px;font-size:15px;transition:border-color .2s ease;
+  }
+  .info a:hover{border-color:rgba(231,205,138,.45)}
+  .info .ic{flex:none;width:22px;height:22px}
+  .info .ic svg{width:22px;height:22px;stroke:var(--gold-light)}
+  .info .t{color:var(--muted);font-size:12px;letter-spacing:.08em}
+  .info .v{color:var(--text);font-weight:500}
+
+  .socials{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+  .sbtn{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);
+    border-radius:99px;padding:11px 20px;font-size:14px;color:var(--text);
+    transition:border-color .2s ease,background .2s ease}
+  .sbtn:hover{border-color:var(--gold);background:rgba(203,162,78,.08)}
+  .sbtn svg{width:18px;height:18px}
+
+  .qr-head{margin-top:64px;margin-bottom:26px}
+  .qr-head .eyebrow{display:block;margin-bottom:10px}
+  .qr-head p{color:var(--muted);font-size:14px}
+  .qr-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:520px;margin:0 auto}
+  .qr{background:#fff;border-radius:16px;padding:14px 14px 16px;border:1px solid var(--line)}
+  .qr img{width:100%;border-radius:8px}
+  .qr .cap{margin-top:10px;color:#16241c;font-size:12.5px;font-weight:600;letter-spacing:.02em}
+  .qr .cap small{display:block;color:#5c6b60;font-weight:400;font-size:11px;margin-top:1px}
+
+  footer{padding:46px 22px 60px;text-align:center;border-top:1px solid var(--line);background:var(--bg)}
+  footer .logo{font-family:var(--serif);font-size:18px;color:var(--gold-light);letter-spacing:.04em}
+  footer .en{color:var(--muted);font-size:12px;letter-spacing:.28em;text-transform:uppercase;margin-top:6px}
+  footer .cp{color:var(--muted);font-size:12px;margin-top:20px;opacity:.7}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ---------- DESKTOP ---------- */
+  @media(min-width:720px){
+    section{padding:110px 0}
+    .stat-grid{grid-template-columns:repeat(4,1fr)}
+    .statement-grid{grid-template-columns:1.1fr .9fr;align-items:center;gap:52px}
+    .v-card{padding:28px 30px}
+    .about-grid{grid-template-columns:1fr 1.15fr;align-items:start;gap:46px}
+    .about-photo{position:sticky;top:40px}
+    .qr-grid{grid-template-columns:repeat(4,1fr);max-width:none}
+  }
+  @media(prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none}
+    .scrollcue span{animation:none}
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="hero__bg"><img src="assets/greenhouse-hero.jpeg" alt="羅伯特農業科技智慧溫室內整齊排列的紅綠生菜"></div>
+  <div class="wrap hero__inner">
+    <p class="hero__brand"><span class="zh">羅伯特農業科技</span><span class="en">Robert Horti-Tech</span></p>
+    <h1>生菜王子<span class="en">The Lettuce Prince</span></h1>
+    <p class="hero__name">我叫 <b>羅伯特</b>（邱彥霖 Robert）・創辦人</p>
+    <p class="hero__tag">打造全環控與自動化農業，改變農業的遊戲規則。</p>
+  </div>
+  <div class="scrollcue"><span></span>SCROLL</div>
+</header>
+
+<!-- ===== STATEMENT ===== -->
+<section class="statement">
+  <div class="wrap statement-grid">
+    <div class="reveal">
+      <p class="eyebrow" style="margin-bottom:26px">一句話定位</p>
+      <p class="quote"><span class="mark">「</span>我是<em>生菜王子</em>，我叫<em>羅伯特</em>。<br>打造全環控與自動化農業，<br>改變農業的<em>遊戲規則</em>。<span class="mark">」</span></p>
+      <p class="by">— 邱彥霖 Robert，羅伯特農業科技 創辦人</p>
+    </div>
+    <div class="statement-photo reveal">
+      <img src="assets/robert-jump.jpeg" alt="羅伯特身著深綠西裝躍起、生菜與香草葉片飛揚的形象照">
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<section class="stats">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">戰績實力</span>
+      <h2>用數字說話的農業實力</h2>
+      <hr class="hr-gold">
+    </div>
+    <div class="stat-grid">
+      <div class="stat reveal"><div class="num">66<small>倍</small></div><div class="label">產量 vs 傳統土耕</div><div class="sub">同樣面積，66 倍產出</div></div>
+      <div class="stat reveal"><div class="num">10<small>倍</small></div><div class="label">產量 vs 一般水耕</div><div class="sub">全環控自動化的效率</div></div>
+      <div class="stat reveal"><div class="num">1000<small>噸</small></div><div class="label">每公頃年產量</div><div class="sub">高密度・全年無休栽培</div></div>
+      <div class="stat reveal"><svg class="num-star" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><g><ellipse cx="50" cy="30" rx="11.5" ry="20"/><ellipse cx="50" cy="30" rx="11.5" ry="20" transform="rotate(60 50 50)"/><ellipse cx="50" cy="30" rx="11.5" ry="20" transform="rotate(120 50 50)"/><ellipse cx="50" cy="30" rx="11.5" ry="20" transform="rotate(180 50 50)"/><ellipse cx="50" cy="30" rx="11.5" ry="20" transform="rotate(240 50 50)"/><ellipse cx="50" cy="30" rx="11.5" ry="20" transform="rotate(300 50 50)"/></g></svg><div class="label">米其林餐廳指定</div><div class="sub">高端餐飲品質採用</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VENTURES ===== -->
+<section class="ventures">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">事業版圖</span>
+      <h2>羅伯特集團　三大支柱</h2>
+      <hr class="hr-gold">
+    </div>
+    <div class="v-list">
+      <div class="v-card reveal">
+        <span class="tag">技術顧問</span>
+        <div><h3>羅伯特農業科技</h3><div class="en">ROBERT HORTI-TECH</div>
+          <p>歐洲系統導入、智慧溫室建造與規劃、氣候環控設計、農場顧問與培訓。</p></div>
+      </div>
+      <div class="v-card reveal">
+        <span class="tag">生產品牌</span>
+        <div><h3>德馳未來農場</h3><div class="en">DECHI FUTURE FARM</div>
+          <p>嫩葉生菜、羽衣甘藍、芝麻葉栽培，品牌包裝、餐飲供應與產銷履歷。</p></div>
+      </div>
+      <div class="v-card reveal">
+        <span class="tag">國際貿易</span>
+        <div><h3>德馳國際</h3><div class="en">DECHI INTERNATIONAL</div>
+          <p>設備、種苗、技術與精品農食的進出口與通路整合平台。</p></div>
+      </div>
+    </div>
+    <p class="v-note reveal">承襲<b>歐洲</b>最先進的自動化溫室技術，融入台灣的執行力與創新精神 ——<br><b>以德為本，馳向未來。</b></p>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">關於我</span>
+      <h2>從材料工程師，到生菜王子</h2>
+      <hr class="hr-gold">
+    </div>
+    <p class="about-lead reveal">我不是一開始就務農的。<b>十年、橫跨三國</b>的創業路，讓我把材料工程的精準、跨國 0→1 的膽識，全帶進了這片溫室。</p>
+    <div class="about-grid">
+      <div class="about-photo reveal"><img src="assets/robert-lettuce.jpeg" alt="羅伯特身著深綠西裝、手持生菜的形象照"></div>
+      <div>
+        <ol class="timeline reveal">
+          <li><span class="dot"></span>
+            <span class="yr">學術 × 製造起點</span>
+            <b>英國材料工程・量產製造</b>
+            <p>英國伯明翰大學材料研究（高爾夫球頭金屬），返台後於復盛應用科技任設計開發 PM，協助 TaylorMade 從開發到量產，打下精密製造與專案管理的硬底子。</p></li>
+          <li><span class="dot"></span>
+            <span class="yr">跨國 0 → 1</span>
+            <b>橫跨東南亞與兩岸的創業實戰</b>
+            <p>輔導東莞模具廠導入財務透明化與雲端管理、操作柬埔寨海外地產；期間也涉足能源燃料棒、碳纖維製程等跨國項目。</p></li>
+          <li><span class="dot"></span>
+            <span class="yr">農業實戰</span>
+            <b>羅伯特農場・魚菜共生</b>
+            <p>全台首個商轉滿五年，累積從種植、營運到市場的完整實力。</p></li>
+          <li><span class="dot"></span>
+            <span class="yr">Now</span>
+            <b>全環控自動化溫室 × AI</b>
+            <p>集大成之作 —— 用科技與數據，重新定義農業的遊戲規則。</p></li>
+        </ol>
+        <div class="about-side reveal">
+          <p class="side-title">工作之外的我</p>
+          <ul class="traits">
+            <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="12" cy="6" r="2.4"/><path d="M5 11h14M12 9v6m0 0l-4 5m4-5l4 5"/></svg></span>
+              <div><b>瑜伽・氣功養生</b><span class="d">身心平衡，是做長遠事業的底氣</span></div></li>
+            <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 3v13"/><circle cx="12" cy="18.5" r="2.5"/><path d="M12 6c3 1 6 0 7-2"/></svg></span>
+              <div><b>高爾夫</b><span class="d">差點 10，球場上磨出的耐心與精準</span></div></li>
+            <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="6" width="18" height="13" rx="2"/><circle cx="12" cy="12.5" r="3.2"/><path d="M8 6l1.5-2h5L16 6"/></svg></span>
+              <div><b>攝影人</b><span class="d">舉辦過三次個人攝影展，用鏡頭說土地的故事</span></div></li>
+          </ul>
+        </div>
+        <p class="origin reveal">我投入農業，不是因為它容易，而是因為我相信 ——<br>台灣的農業可以更聰明、更有尊嚴。從<b>歐洲半封閉溫室</b>到全環控自動化，我想證明：一片生菜，也能改變一個產業的遊戲規則。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact">
+  <div class="wrap">
+    <div class="sec-head reveal" style="text-align:center">
+      <span class="eyebrow" style="display:block;margin-bottom:14px">與我聯絡</span>
+      <h2>把我存進你的通訊錄</h2>
+    </div>
+
+    <button class="vbtn reveal" id="vcard">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 13l2 2 4-4"/></svg>
+      一鍵存入通訊錄
+    </button>
+    <p class="vhint reveal">點一下，自動把姓名・電話・Email・地址存進手機</p>
+
+    <div class="info">
+      <a class="reveal" href="tel:0931347988">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M5 4h4l2 5-3 2a14 14 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>
+        <span><span class="t">電話</span><br><span class="v">0931-347-988</span></span>
+      </a>
+      <a class="reveal" href="mailto:robert.horti.tech@gmail.com">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+        <span><span class="t">Email</span><br><span class="v">robert.horti.tech@gmail.com</span></span>
+      </a>
+      <a class="reveal" href="https://maps.google.com/?q=台中市中興街359號14樓之3" target="_blank" rel="noopener">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+        <span><span class="t">羅伯特農業科技</span><br><span class="v">台中市中興街 359 號 14 樓之 3</span></span>
+      </a>
+      <a class="reveal" href="https://maps.google.com/?q=苗栗縣卓蘭鎮西坪里西坪125-10號" target="_blank" rel="noopener">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+        <span><span class="t">羅伯特農場</span><br><span class="v">苗栗縣卓蘭鎮西坪里西坪 125-10 號</span></span>
+      </a>
+    </div>
+
+    <div class="socials">
+      <a class="sbtn reveal" href="https://www.facebook.com/robjarool" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="var(--gold-light)"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg>個人臉書</a>
+      <a class="sbtn reveal" href="https://www.facebook.com/robert.ap.farm/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="var(--gold-light)"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg>羅伯特農場臉書</a>
+    </div>
+
+    <div class="qr-head reveal">
+      <span class="eyebrow">掃描加好友・追蹤</span>
+      <p>用手機相機對準下方 QR Code 即可</p>
+    </div>
+    <div class="qr-grid">
+      <div class="qr reveal"><img src="assets/qr-line.png" alt="羅伯特 LINE QR Code"><div class="cap">LINE<small>加我好友</small></div></div>
+      <div class="qr reveal"><img src="assets/qr-ig-personal.png" alt="個人 Instagram QR Code"><div class="cap">IG・個人<small>羅伯特本人</small></div></div>
+      <div class="qr reveal"><img src="assets/qr-ig-farm.png" alt="羅伯特農場 Instagram QR Code"><div class="cap">IG・農場<small>羅伯特農場</small></div></div>
+      <div class="qr reveal"><img src="assets/qr-ig-hortitech.png" alt="羅伯特農業科技 Instagram QR Code"><div class="cap">IG・農業科技<small>Robert Horti-Tech</small></div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="logo">羅伯特農業科技</div>
+  <div class="en">Robert Horti-Tech</div>
+  <div class="cp">© 2026 邱彥霖 Robert ・ 以德為本，馳向未來</div>
+</footer>
+
+<script>
+  // vCard 一鍵存入通訊錄
+  document.getElementById('vcard').addEventListener('click',function(){
+    var v=[
+      'BEGIN:VCARD','VERSION:3.0',
+      'N:邱;彥霖;;;','FN:邱彥霖 Robert',
+      'ORG:羅伯特農業科技 Robert Horti-Tech','TITLE:創辦人 Founder',
+      'TEL;TYPE=CELL:+886931347988',
+      'EMAIL;TYPE=WORK:robert.horti.tech@gmail.com',
+      'ADR;TYPE=WORK:;;台中市中興街359號14樓之3;;;;台灣',
+      'ADR;TYPE=HOME:;;苗栗縣卓蘭鎮西坪里西坪125-10號;;;;台灣',
+      'URL:https://www.facebook.com/robert.ap.farm/',
+      'NOTE:生菜王子・羅伯特農場創辦人',
+      'END:VCARD'
+    ].join('\r\n');
+    var blob=new Blob([v],{type:'text/vcard;charset=utf-8'});
+    var a=document.createElement('a');
+    a.href=URL.createObjectURL(blob);a.download='Robert.vcf';
+    document.body.appendChild(a);a.click();document.body.removeChild(a);
+  });
+
+  // 進場淡入
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+</script>
+</body>
+</html>
