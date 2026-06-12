@@ -208,7 +208,9 @@
   .vbtn svg{width:20px;height:20px;stroke:#241a06}
   .vhint{margin-top:13px;color:var(--muted);font-size:13px}
 
-  .info{display:grid;gap:11px;max-width:430px;margin:42px auto 0;text-align:left}
+  .info{display:grid;gap:11px;max-width:380px;margin:42px auto 0;text-align:left}
+  .info a{min-width:0}
+  .info a>span:last-child{min-width:0;overflow-wrap:anywhere}
   .info a,.info .row{
     display:flex;align-items:center;gap:14px;
     background:var(--card);border:1px solid var(--line);border-radius:13px;
@@ -220,12 +222,13 @@
   .info .t{color:var(--muted);font-size:12px;letter-spacing:.08em}
   .info .v{color:var(--text);font-weight:500}
 
-  .socials{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:30px}
-  .sbtn{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);
-    border-radius:99px;padding:11px 20px;font-size:14px;color:var(--text);
+  .social-rows{margin:30px auto 0;max-width:380px;display:flex;flex-direction:column;gap:10px}
+  .social-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+  .sbtn{display:flex;align-items:center;justify-content:center;gap:6px;border:1px solid var(--line);
+    border-radius:12px;padding:12px 6px;font-size:12.5px;color:var(--text);text-align:center;line-height:1.2;
     transition:border-color .2s ease,background .2s ease}
   .sbtn:hover{border-color:var(--gold);background:rgba(203,162,78,.08)}
-  .sbtn svg{width:18px;height:18px}
+  .sbtn svg{width:16px;height:16px;flex:none}
 
   .qr-head{margin-top:64px;margin-bottom:26px}
   .qr-head .eyebrow{display:block;margin-bottom:10px}
@@ -327,16 +330,16 @@
       </div>
       <div class="v-card reveal">
         <span class="tag">生產品牌</span>
-        <div><h3>德馳未來農場</h3><div class="en">DECHI FUTURE FARM</div>
+        <div><h3>未來農場</h3><div class="en">FUTURE FARM</div>
           <p>嫩葉生菜、羽衣甘藍、芝麻葉栽培，品牌包裝、餐飲供應與產銷履歷。</p></div>
       </div>
       <div class="v-card reveal">
-        <span class="tag">國際貿易</span>
-        <div><h3>德馳國際</h3><div class="en">DECHI INTERNATIONAL</div>
+        <span class="tag">貿易通路</span>
+        <div><h3>國際貿易</h3><div class="en">INTERNATIONAL TRADE</div>
           <p>設備、種苗、技術與精品農食的進出口與通路整合平台。</p></div>
       </div>
     </div>
-    <p class="v-note reveal">承襲<b>歐洲</b>最先進的自動化溫室技術，融入台灣的執行力與創新精神 ——<br><b>以德為本，馳向未來。</b></p>
+    <p class="v-note reveal">承襲<b>歐洲</b>最先進的自動化溫室技術，融入台灣的執行力與創新精神 ——<br><b>讓台灣農業，長出世界級的樣子。</b></p>
   </div>
 </section>
 
@@ -420,19 +423,23 @@
       </a>
     </div>
 
-    <div class="socials">
-      <a class="sbtn reveal" href="https://line.me/ti/p/ZOqlzwtyOY" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold-light)" stroke-width="1.7" stroke-linejoin="round"><path d="M21 11.4c0-4.2-4-7.6-9-7.6S3 7.2 3 11.4c0 3.8 3.2 7 7.5 7.6.3.1.7.2.8.5.1.2.1.6 0 .8l-.1.8c0 .2-.2 1 .9.6 1.1-.5 5.8-3.4 7.9-5.9h0A7.3 7.3 0 0 0 21 11.4z"/></svg>LINE 加好友</a>
-      <a class="sbtn reveal" href="https://www.facebook.com/robjarool" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="var(--gold-light)"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg>個人臉書</a>
-      <a class="sbtn reveal" href="https://www.facebook.com/robert.ap.farm/" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="var(--gold-light)"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg>羅伯特農場臉書</a>
-      <a class="sbtn reveal" href="https://www.instagram.com/robbiechiu" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold-light)" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5.2"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.1" fill="var(--gold-light)" stroke="none"/></svg>IG・個人</a>
-      <a class="sbtn reveal" href="https://www.instagram.com/robert.horti.tech" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold-light)" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5.2"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.1" fill="var(--gold-light)" stroke="none"/></svg>IG・農業科技</a>
-      <a class="sbtn reveal" href="https://www.instagram.com/robert.ap.farm" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold-light)" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5.2"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.1" fill="var(--gold-light)" stroke="none"/></svg>IG・農場</a>
+    <div class="social-rows">
+      <div class="social-row reveal">
+        <a class="sbtn" href="https://line.me/ti/p/ZOqlzwtyOY" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold-light)" stroke-width="1.7" stroke-linejoin="round"><path d="M21 11.4c0-4.2-4-7.6-9-7.6S3 7.2 3 11.4c0 3.8 3.2 7 7.5 7.6.3.1.7.2.8.5.1.2.1.6 0 .8l-.1.8c0 .2-.2 1 .9.6 1.1-.5 5.8-3.4 7.9-5.9h0A7.3 7.3 0 0 0 21 11.4z"/></svg>LINE</a>
+        <a class="sbtn" href="https://www.facebook.com/robjarool" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="var(--gold-light)"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg>個人臉書</a>
+        <a class="sbtn" href="https://www.facebook.com/robert.ap.farm/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="var(--gold-light)"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg>農場臉書</a>
+      </div>
+      <div class="social-row reveal">
+        <a class="sbtn" href="https://www.instagram.com/robbiechiu" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold-light)" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5.2"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.1" fill="var(--gold-light)" stroke="none"/></svg>IG・個人</a>
+        <a class="sbtn" href="https://www.instagram.com/robert.horti.tech" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold-light)" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5.2"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.1" fill="var(--gold-light)" stroke="none"/></svg>IG・農業科技</a>
+        <a class="sbtn" href="https://www.instagram.com/robert.ap.farm" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold-light)" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5.2"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.1" fill="var(--gold-light)" stroke="none"/></svg>IG・農場</a>
+      </div>
     </div>
 
   </div>
@@ -441,7 +448,7 @@
 <footer>
   <div class="logo">羅伯特農業科技</div>
   <div class="en">Robert Horti-Tech</div>
-  <div class="cp">© 2026 邱彥霖 Robert ・ 以德為本，馳向未來</div>
+  <div class="cp">© 2026 邱彥霖 Robert ・ 羅伯特農業科技</div>
 </footer>
 
 <script>
