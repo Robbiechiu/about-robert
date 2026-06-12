@@ -245,6 +245,19 @@
   footer .logo{font-family:var(--serif);font-size:18px;color:var(--gold-light);letter-spacing:.04em}
   footer .en{color:var(--muted);font-size:12px;letter-spacing:.28em;text-transform:uppercase;margin-top:6px}
   footer .cp{color:var(--muted);font-size:12px;margin-top:20px;opacity:.7}
+  .cnfcd{margin:26px auto 0;max-width:380px}
+  .cnfcd summary{cursor:pointer;list-style:none;font-size:13px;color:var(--muted);
+    padding:11px 17px;border:1px solid var(--line);border-radius:99px;display:inline-block;
+    transition:border-color .2s ease,background .2s ease}
+  .cnfcd summary::-webkit-details-marker{display:none}
+  .cnfcd summary:hover,.cnfcd[open] summary{border-color:var(--gold);background:rgba(203,162,78,.07)}
+  .cnfcd summary .tag{color:var(--gold-light);font-weight:700;letter-spacing:.08em}
+  .cnfcd img{margin:18px auto 0;max-width:330px;width:100%;border-radius:14px;
+    border:1px solid var(--line);display:block}
+  .cnfcd-link{display:inline-block;margin-top:14px;font-size:13px;color:var(--gold-light);
+    border:1px solid var(--gold);border-radius:99px;padding:9px 18px;letter-spacing:.04em;
+    transition:background .2s ease}
+  .cnfcd-link:hover{background:rgba(203,162,78,.12)}
 
   /* reveal */
   .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
@@ -449,6 +462,11 @@
   <div class="logo">羅伯特農業科技</div>
   <div class="en">Robert Horti-Tech</div>
   <div class="cp">© 2026 邱彥霖 Robert ・ 羅伯特農業科技</div>
+  <details class="cnfcd">
+    <summary><span class="tag">CNFCD</span>　29 天瘦 4.2 公斤，包含 3.5 公斤脂肪</summary>
+    <img src="assets/cnfcd-ba.jpg" alt="羅伯特參加微康健康 CNFCD，29 天減重 4.2 公斤、減脂 3.5 公斤前後對比">
+    <a class="cnfcd-link" href="https://www.yellowfan.com.tw/day21" target="_blank" rel="noopener">CNFCD 健康顧問 →</a>
+  </details>
 </footer>
 
 <script>

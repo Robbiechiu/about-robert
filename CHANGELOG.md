@@ -9,6 +9,11 @@ Repo：`Robbiechiu/about-robert`（GitHub，public）
 
 ## 2026-06-13
 
+### 頁尾加入 CNFCD（微康健康）前後對比
+- 頁尾膠囊：「**CNFCD** 29 天瘦 4.2 公斤，包含 3.5 公斤脂肪」，點 CNFCD 用 `<details>` 展開業主本人前後對比圖（`assets/cnfcd-ba.jpg`）。
+- 圖下方連結：「CNFCD 健康顧問 →」→ <https://www.yellowfan.com.tw/day21>。
+- 業主決定放在這張農業科技名片上（個人健康紀錄／微康顧問身分）。
+
 ### 社群區 3＋3 排版
 - 六個社群連結改成固定兩排、每排三個：
   - 上排：**LINE ・ 個人臉書 ・ 農場臉書**
