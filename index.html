@@ -52,13 +52,14 @@
     padding:0 0 11vh;overflow:hidden;
   }
   .hero__bg{position:absolute;inset:0;z-index:0}
-  .hero__bg img{width:100%;height:100%;object-fit:cover;object-position:42% center;opacity:.82}
+  .hero__bg img{width:100%;height:100%;object-fit:cover;object-position:42% center;
+    opacity:.96;filter:brightness(1.12) saturate(.95)}
   .hero__bg::after{
     content:"";position:absolute;inset:0;
     background:
-      linear-gradient(180deg,rgba(9,18,13,.74) 0%,rgba(9,18,13,.40) 38%,rgba(9,18,13,.88) 80%,var(--bg) 100%),
-      radial-gradient(130% 90% at 50% 116%,rgba(13,58,34,.72),transparent 62%),
-      linear-gradient(0deg,rgba(12,44,27,.42),rgba(12,44,27,.42));
+      linear-gradient(180deg,rgba(9,18,13,.30) 0%,rgba(9,18,13,.05) 32%,rgba(9,18,13,.44) 62%,rgba(9,18,13,.87) 84%,var(--bg) 100%),
+      radial-gradient(120% 78% at 50% 118%,rgba(13,58,34,.6),transparent 60%),
+      linear-gradient(0deg,rgba(12,44,27,.16),rgba(12,44,27,.16));
   }
   .hero__inner{position:relative;z-index:1}
   .hero .eyebrow{margin-bottom:18px}
@@ -230,6 +231,8 @@
   .qr-head .eyebrow{display:block;margin-bottom:10px}
   .qr-head p{color:var(--muted);font-size:14px}
   .qr-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:520px;margin:0 auto}
+  .qr-single{display:flex;justify-content:center}
+  .qr-single .qr{width:230px}
   .qr{background:#fff;border-radius:16px;padding:14px 14px 16px;border:1px solid var(--line)}
   .qr img{width:100%;border-radius:8px}
   .qr .cap{margin-top:10px;color:#16241c;font-size:12.5px;font-weight:600;letter-spacing:.02em}
@@ -422,17 +425,20 @@
         <svg viewBox="0 0 24 24" fill="var(--gold-light)"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg>個人臉書</a>
       <a class="sbtn reveal" href="https://www.facebook.com/robert.ap.farm/" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="var(--gold-light)"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg>羅伯特農場臉書</a>
+      <a class="sbtn reveal" href="https://www.instagram.com/robbiechiu" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold-light)" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5.2"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.1" fill="var(--gold-light)" stroke="none"/></svg>IG・個人</a>
+      <a class="sbtn reveal" href="https://www.instagram.com/robert.horti.tech" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold-light)" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5.2"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.1" fill="var(--gold-light)" stroke="none"/></svg>IG・農業科技</a>
+      <a class="sbtn reveal" href="https://www.instagram.com/robert.ap.farm" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold-light)" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5.2"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.1" fill="var(--gold-light)" stroke="none"/></svg>IG・農場</a>
     </div>
 
     <div class="qr-head reveal">
-      <span class="eyebrow">掃描加好友・追蹤</span>
-      <p>用手機相機對準下方 QR Code 即可</p>
+      <span class="eyebrow">加我 LINE</span>
+      <p>用手機相機或 LINE 對準下方 QR Code 即可</p>
     </div>
-    <div class="qr-grid">
-      <div class="qr reveal"><img src="assets/qr-line.png" alt="羅伯特 LINE QR Code"><div class="cap">LINE<small>加我好友</small></div></div>
-      <div class="qr reveal"><img src="assets/qr-ig-personal.png" alt="個人 Instagram QR Code"><div class="cap">IG・個人<small>羅伯特本人</small></div></div>
-      <div class="qr reveal"><img src="assets/qr-ig-farm.png" alt="羅伯特農場 Instagram QR Code"><div class="cap">IG・農場<small>羅伯特農場</small></div></div>
-      <div class="qr reveal"><img src="assets/qr-ig-hortitech.png" alt="羅伯特農業科技 Instagram QR Code"><div class="cap">IG・農業科技<small>Robert Horti-Tech</small></div></div>
+    <div class="qr-single reveal">
+      <div class="qr"><img src="assets/qr-line.png" alt="羅伯特 LINE QR Code"><div class="cap">LINE<small>加我好友</small></div></div>
     </div>
   </div>
 </section>
