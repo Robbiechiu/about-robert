@@ -1,2 +1,7 @@
 assets/_original/
 .DS_Store
+
+# 暫存截圖與測試渲染檔（保留 index.html）
+/*.png
+/*.html
+!/index.html
