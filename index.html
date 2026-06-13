@@ -137,6 +137,12 @@
   .stat .michelin{display:flex;gap:4px;margin-bottom:12px;color:var(--gold-light);
     line-height:1;filter:drop-shadow(0 2px 8px rgba(203,162,78,.35))}
   .stat .michelin svg{width:clamp(34px,9vw,46px);height:clamp(34px,9vw,46px);display:block}
+  .clients-note{text-align:center;color:var(--muted);font-size:13.5px;margin-top:8px;line-height:1.7}
+  .logo-wall{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;max-width:430px;margin:30px auto 0}
+  .logo-wall .tile{width:78px;height:78px;border-radius:16px;background:#f4efe4;
+    border:1px solid rgba(203,162,78,.18);box-shadow:0 6px 18px rgba(0,0,0,.2);
+    display:grid;place-items:center;padding:11px;overflow:hidden}
+  .logo-wall .tile img{max-width:100%;max-height:100%;object-fit:contain;display:block}
 
   /* ---------- VENTURES ---------- */
   .ventures{background:var(--bg)}
@@ -327,10 +333,32 @@
       <hr class="hr-gold">
     </div>
     <div class="stat-grid">
-      <div class="stat reveal"><div class="num">66<small>倍</small></div><div class="label">產量 vs 傳統土耕</div><div class="sub">同樣面積，66 倍產出</div></div>
-      <div class="stat reveal"><div class="num">10<small>倍</small></div><div class="label">產量 vs 一般水耕</div><div class="sub">全環控自動化的效率</div></div>
-      <div class="stat reveal"><div class="num">1000<small>噸</small></div><div class="label">每公頃年產量</div><div class="sub">高密度・全年無休栽培</div></div>
+      <div class="stat reveal"><div class="num">67<small>倍</small></div><div class="label">產量 vs 傳統土耕</div><div class="sub">土耕 20 噸 → 我 1,350 噸/公頃·年</div></div>
+      <div class="stat reveal"><div class="num">9<small>倍</small></div><div class="label">產量 vs 最新水耕</div><div class="sub">最新水耕 150 噸 → 我 1,350 噸</div></div>
+      <div class="stat reveal"><div class="num">1,350<small>噸</small></div><div class="label">每公頃年產量</div><div class="sub">高達 1,000–1,350 噸・全年無休</div></div>
       <div class="stat reveal"><div class="michelin"><svg viewBox="9 9 82 82"><use href="#florette"/></svg><svg viewBox="9 9 82 82"><use href="#florette"/></svg><svg viewBox="9 9 82 82"><use href="#florette"/></svg></div><div class="label">米其林餐廳指定</div><div class="sub">高端餐飲品質採用</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CLIENTS ===== -->
+<section class="clients">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">餐飲名店指定</span>
+      <h2>餐桌上的信任</h2>
+      <hr class="hr-gold">
+    </div>
+    <p class="clients-note reveal">從米其林星級到精品咖啡・烘焙，他們的生菜，來自羅伯特。</p>
+    <div class="logo-wall reveal">
+      <div class="tile"><img src="assets/logos/weisheng-s.jpg" alt="微生 Float Dept."></div>
+      <div class="tile"><img src="assets/logos/isola-clean.png" alt="ISOLA Dining &amp; Bar"></div>
+      <div class="tile"><img src="assets/logos/mdc.png" alt="MDC"></div>
+      <div class="tile"><img src="assets/logos/logy.png" alt="logy"></div>
+      <div class="tile"><img src="assets/logos/fanri.png" alt="凡日 Funday Bread &amp; Meal"></div>
+      <div class="tile"><img src="assets/logos/juggler-s.jpg" alt="JUGGLER CAFE"></div>
+      <div class="tile"><img src="assets/logos/nita-clean.png" alt="NITA"></div>
+      <div class="tile"><img src="assets/logos/subway-s.jpg" alt="SUBWAY"></div>
     </div>
   </div>
 </section>
