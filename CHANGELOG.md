@@ -9,6 +9,13 @@ Repo：`Robbiechiu/about-robert`（GitHub，public）
 
 ## 2026-06-13
 
+### 加入 WhatsApp + WeChat（給歐洲／大陸朋友）
+- 社群區加第三排（兩欄）：**WhatsApp ・ WeChat**。
+- WhatsApp：可點按鈕，直連 `https://wa.me/886931347988`（綁業主手機 0931-347-988），點了直接開對話。
+- WeChat：微信無公開網頁加好友連結（`weixin://` 僅微信 App 內有效），故只能放 QR。做成點按鈕 → 下方 `<details>`/JS 展開微信 QR 卡片（再點收合）；無 JS 時退回直接開啟 QR 圖。
+- 微信 QR 從業主截圖（`IMG_9549.JPG`）置中裁切為 `assets/qr-wechat.png`（660×660，含微信 logo，三定位點完整可掃）。
+- 待辦：若要讓人「搜尋 ID 加好友」，需業主提供**微信號**（截圖未顯示）。
+
 ### 加入 CNFCD（微康健康）前後對比
 - 位置：「關於我」段、**手持生菜形象照（robert-lettuce）正下方**（`.about-left` 內），寬度與照片同寬。
 - 收合：膠囊「**CNFCD** 29 天瘦 4.2 公斤，包含 3.5 公斤脂肪」，點 CNFCD 用 `<details>` 展開業主本人前後對比圖（`assets/cnfcd-ba.jpg`）。
