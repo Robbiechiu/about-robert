@@ -251,13 +251,17 @@
   footer .logo{font-family:var(--serif);font-size:18px;color:var(--gold-light);letter-spacing:.04em}
   footer .en{color:var(--muted);font-size:12px;letter-spacing:.28em;text-transform:uppercase;margin-top:6px}
   footer .cp{color:var(--muted);font-size:12px;margin-top:20px;opacity:.7}
-  .cnfcd{margin:14px 0 0}
-  .cnfcd summary{cursor:pointer;list-style:none;font-size:14px;color:var(--text);
-    padding:14px 18px;border:1px solid var(--line);border-radius:14px;display:block;text-align:center;
-    transition:border-color .2s ease,background .2s ease}
+  .cnfcd{margin:16px 0 0}
+  .cnfcd summary{cursor:pointer;list-style:none;display:flex;gap:14px;align-items:flex-start;font-size:15.5px}
   .cnfcd summary::-webkit-details-marker{display:none}
-  .cnfcd summary:hover,.cnfcd[open] summary{border-color:var(--gold);background:rgba(203,162,78,.07)}
-  .cnfcd summary .tag{color:var(--gold-light);font-weight:700;letter-spacing:.08em}
+  .cnfcd summary .ic{flex:none;width:38px;height:38px;border-radius:11px;display:grid;place-items:center;
+    background:var(--green-deep);border:1px solid var(--line)}
+  .cnfcd summary .ic svg{width:19px;height:19px;stroke:var(--gold-light)}
+  .cnfcd summary b{font-family:var(--serif);font-weight:600;display:block;margin-bottom:1px}
+  .cnfcd summary .d{color:var(--muted);font-size:13.5px}
+  .cnfcd summary .chev{margin-left:auto;width:16px;height:16px;stroke:var(--muted);flex:none;
+    align-self:center;transition:transform .2s ease}
+  .cnfcd[open] summary .chev{transform:rotate(180deg)}
   .cnfcd img{margin:14px 0 0;width:100%;border-radius:14px;border:1px solid var(--line);display:block}
   .cnfcd-link{display:block;text-align:center;margin-top:12px;font-size:13.5px;color:var(--gold-light);
     border:1px solid var(--gold);border-radius:99px;padding:12px 18px;letter-spacing:.04em;
@@ -300,20 +304,6 @@
   </div>
   <div class="scrollcue"><span></span>SCROLL</div>
 </header>
-
-<!-- ===== STATEMENT ===== -->
-<section class="statement">
-  <div class="wrap statement-grid">
-    <div class="reveal">
-      <p class="eyebrow" style="margin-bottom:26px">一句話定位</p>
-      <p class="quote"><span class="mark">「</span>打造<em>全環控與自動化農業</em>，改變農業的<em>遊戲規則</em>。<span class="mark">」</span></p>
-      <p class="by">— 創辦人 羅伯特（邱彥霖 Robert）</p>
-    </div>
-    <div class="statement-photo reveal">
-      <img src="assets/robert-jump.jpeg" alt="羅伯特身著深綠西裝躍起、生菜與香草葉片飛揚的形象照">
-    </div>
-  </div>
-</section>
 
 <!-- ===== STATS ===== -->
 <section class="stats">
@@ -404,7 +394,11 @@
               <div><b>攝影人</b><span class="d">舉辦過三次個人攝影展，用鏡頭說土地的故事</span></div></li>
           </ul>
           <details class="cnfcd reveal">
-            <summary><span class="tag">CNFCD</span>　29 天瘦 4.2 公斤，包含 3.5 公斤脂肪</summary>
+            <summary>
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 20s-7-4.4-7-9.5A3.8 3.8 0 0 1 12 7a3.8 3.8 0 0 1 7 3.5C19 15.6 12 20 12 20z"/></svg></span>
+              <div><b>CNFCD</b><span class="d">29 天瘦 4.2 公斤，包含 3.5 公斤脂肪</span></div>
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+            </summary>
             <img src="assets/cnfcd-ba.jpg" alt="羅伯特參加微康健康 CNFCD，29 天減重 4.2 公斤、減脂 3.5 公斤前後對比">
             <a class="cnfcd-link" href="https://www.yellowfan.com.tw/day21" target="_blank" rel="noopener">CNFCD 健康顧問 →</a>
           </details>
