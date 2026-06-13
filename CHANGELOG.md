@@ -9,6 +9,26 @@ Repo：`Robbiechiu/about-robert`（GitHub，public）
 
 ## 2026-06-13
 
+### 桌機改用手機單欄排版
+- 業主回饋「桌機排版一直很爛、手機很好」→ 桌機改為跟手機一致的**單欄由上往下堆**。
+- 移除 `@media(min-width:720px)` 內的分欄覆寫：數字卡 4 欄、引言左右兩欄、關於我左右兩欄（含 sticky 照片）、QR 4 欄全部拿掉。
+- 內容欄寬 `--maxw` 由 920px 收窄為 **600px 置中**（手機比例感）；hero 大圖維持滿版。中英兩頁同步。
+
+### 新增英文版名片頁 ＋ 中/EN 切換鈕（雙語）
+- 新建 **`en/index.html`**：全文 1:1 對譯成英文，共用同一份 CSS/版型（圖片改用 `../assets/`）。
+- 兩頁右上角固定 **「中 / EN」切換鈕**互相對接（英文頁＝`/about-robert/en/`）。
+- 維持口徑：德馳/DECHI 不公開（生產＝Future Farm、貿易＝International Trade）、講歐洲不講荷蘭。
+- vCard 英文版：`Robert Chiu (邱彥霖)`／Founder／國際碼 +886。
+- 英文地址定稿：**No. 125-10, Xiping, Zhuolan Township, Miaoli County 369002, Taiwan (R.O.C.)**。
+
+### 英文頁文案與排版微調（多輪）
+- hero 品牌「羅伯特農業科技／Robert Horti-Tech」與英文行**間距收緊**（中文行高 1.1、英文 margin-top 4px）。
+- hero 品牌字**可讀性**：亮背景上糊掉 → 改亮金、加粗、加重雙層深色陰影（中英兩頁）。
+- 英文頁主標「The Lettuce Prince」字級縮小（上限 104→82px），避免擠成三行。
+- 英文標語改為 **「Building controlled-environment, automated agriculture — Be the GAME CHANGER of Taiwan Horticulture.」**（hero 副標＋中段引言同步；中文標語不動）。
+- 英文頁中段引言字級縮小（桌機 42→31px），避免長單字一字一行。
+- 英文戰績區標題定為 **「Precision in Numbers, Strength of Farming」**。
+
 ### hero 下方相片條 ＋ 四鳥之家 ＋ 多項微調（本輪定稿）
 - **首屏名字行**：最終定為 **「創辦人 羅伯特（邱彥霖 Robert）」**（拿掉「我叫」與尾段「・創辦人」）。
 - **「一句話定位」區**：先移除「一句話定位」五字標籤；再把署名與引言**順序對調**為「— 創辦人 羅伯特（邱彥霖 Robert）」在上、大字引言「打造全環控與自動化農業，改變農業的遊戲規則」在下（`.by` 間距改為下方留白）。
