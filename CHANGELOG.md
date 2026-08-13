@@ -7,6 +7,19 @@ Repo：`Robbiechiu/about-robert`（GitHub，public）
 
 ---
 
+## 2026-08-13
+
+### 新增「商會平台」區塊（關於我段，放在「工作之外的我」上方）
+- CXO TC8 斯巴達 AI 分會 — 現任會長。
+- BNI 華泰分會 — 第八屆接待組組長／產業服務組・餐飲服務組組長。
+- 沿用既有 `.about-side` + `.traits` 結構，未新增 CSS。中英兩頁同步（英文 side-title = `Business Communities`）。
+
+### CNFCD 前後對比照改為直接顯示（取消折疊）
+- `<details>/<summary>` 改成 `<div class="cnfcd">` + `<div class="cnfcd-head">`，移除展開箭頭 `.chev`。
+- CSS 的 `.cnfcd summary*` 選擇器全部改為 `.cnfcd-head*`，刪掉 `::-webkit-details-marker` 與 `[open]` 旋轉規則。中英兩頁同步。
+
+---
+
 ## 2026-06-13
 
 ### 桌機改用手機單欄排版
