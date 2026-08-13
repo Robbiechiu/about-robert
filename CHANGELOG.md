@@ -14,9 +14,9 @@ Repo：`Robbiechiu/about-robert`（GitHub，public）
 - BNI 華泰分會 — 第八屆接待組組長／產業服務組・餐飲服務組組長。
 - 沿用既有 `.about-side` + `.traits` 結構，未新增 CSS。中英兩頁同步（英文 side-title = `Business Communities`）。
 
-### CNFCD 前後對比照改為直接顯示（取消折疊）
-- `<details>/<summary>` 改成 `<div class="cnfcd">` + `<div class="cnfcd-head">`，移除展開箭頭 `.chev`。
-- CSS 的 `.cnfcd summary*` 選擇器全部改為 `.cnfcd-head*`，刪掉 `::-webkit-details-marker` 與 `[open]` 旋轉規則。中英兩頁同步。
+### CNFCD 前後對比照：一度改為直接顯示，同日改回折疊
+- 曾把 `<details>/<summary>` 拆成一般 `<div>` 讓照片常駐展開，業主評估後決定維持「點開才看到」。
+- 已完整還原為原本的 `<details>` 折疊元件（含 `.chev` 箭頭與相關 CSS），中英兩頁同步。
 
 ---
 
