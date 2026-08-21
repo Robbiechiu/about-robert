@@ -283,6 +283,20 @@
   .qr .cap{margin-top:10px;color:#16241c;font-size:12.5px;font-weight:600;letter-spacing:.02em}
   .qr .cap small{display:block;color:#5c6b60;font-weight:400;font-size:11px;margin-top:1px}
 
+  .partner{padding:74px 0;background:var(--bg-2)}
+  .partner .lead{color:var(--muted);font-size:14.5px;line-height:1.85;text-align:center;
+    max-width:420px;margin:0 auto 30px}
+  .partner .urlbox{display:flex;gap:9px;max-width:420px;margin:22px auto 0}
+  .partner .urlbox input{flex:1;min-width:0;padding:12px;border:1px solid var(--line);
+    border-radius:11px;background:rgba(203,162,78,.05);color:var(--gold-light);
+    font-size:13.5px;text-align:center;font-family:var(--sans)}
+  .partner .urlbox button{border:0;padding:12px 20px;border-radius:11px;cursor:pointer;
+    background:linear-gradient(135deg,var(--gold),var(--gold-light));color:#241a06;
+    font-weight:700;font-size:14.5px;white-space:nowrap;font-family:var(--sans)}
+  .partner .urlbox button.ok{background:var(--green-bright);color:#fff}
+  .partner .hint{color:var(--muted);font-size:12.5px;text-align:center;margin:12px auto 0;
+    max-width:420px;line-height:1.6}
+
   footer{padding:46px 22px 60px;text-align:center;border-top:1px solid var(--line);background:var(--bg)}
   footer .logo{font-family:var(--serif);font-size:18px;color:var(--gold-light);letter-spacing:.04em}
   footer .en{color:var(--muted);font-size:12px;letter-spacing:.28em;text-transform:uppercase;margin-top:6px}
@@ -402,6 +416,32 @@
       <div class="tile"><img src="assets/logos/subway-s.jpg" alt="SUBWAY"></div>
       <div class="tile"><img src="assets/logos/thediner.jpg" alt="樂子 the Diner"></div>
     </div>
+  </div>
+</section>
+
+<!-- ===== PARTNER（餐廳合作意向表） ===== -->
+<section class="partner">
+  <div class="wrap">
+    <div class="sec-head reveal" style="text-align:center">
+      <span class="eyebrow">餐廳合作</span>
+      <h2>想在您的店裡用到這些生菜？</h2>
+      <hr class="hr-gold" style="margin-left:auto;margin-right:auto">
+    </div>
+    <p class="lead reveal">溫室環控栽培、利用率 95～100%、冷藏可達 21 天。<br>
+      掃描或點開下方連結，填寫您需要的品項與數量，我們會與您聯繫。</p>
+
+    <div class="qr-single reveal">
+      <a class="qr" href="https://restaurant-mou.pages.dev/" target="_blank" rel="noopener">
+        <img src="assets/qr-mou.png" alt="生鮮葉菜供應意向書 QR" width="230" height="230">
+        <div class="cap">生鮮葉菜供應意向書<small>掃描或點擊即可填寫</small></div>
+      </a>
+    </div>
+
+    <div class="urlbox reveal">
+      <input id="mouUrl" readonly value="https://restaurant-mou.pages.dev/">
+      <button id="mouCopy" type="button">複製</button>
+    </div>
+    <p class="hint reveal" id="mouHint">複製後可直接貼到 LINE 或 Email 傳給對方。</p>
   </div>
 </section>
 
@@ -600,6 +640,22 @@
     a.href=URL.createObjectURL(blob);a.download='Robert.vcf';
     document.body.appendChild(a);a.click();document.body.removeChild(a);
   });
+
+  // 意向表網址一鍵複製（Android 版 LINE 內建瀏覽器會擋剪貼簿，退回選取讓他長按拷貝）
+  (function(){
+    var b=document.getElementById('mouCopy'), i=document.getElementById('mouUrl'),
+        h=document.getElementById('mouHint');
+    if(!b) return;
+    b.addEventListener('click', async function(){
+      var ok=false;
+      try{ await navigator.clipboard.writeText(i.value); ok=true; }
+      catch(e){ try{ i.select(); i.setSelectionRange(0,999); ok=document.execCommand('copy'); }catch(e2){ ok=false; } }
+      if(ok){ b.textContent='已複製'; b.classList.add('ok');
+        setTimeout(function(){ b.textContent='複製'; b.classList.remove('ok'); },1800); }
+      else{ i.select(); i.setSelectionRange(0,999);
+        h.textContent='這個瀏覽器不給複製，網址已選取起來，請長按「拷貝」。'; h.style.color='#e79a9a'; }
+    });
+  })();
 
   // WeChat：點按鈕展開／收合 QR 卡片（無 JS 時退回直接開 QR 圖）
   var wxBtn=document.getElementById('wxBtn');

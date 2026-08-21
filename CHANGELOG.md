@@ -1,5 +1,13 @@
 # CHANGELOG — 羅伯特農業科技 數位名片頁
 
+## 2026-08-21 — 新增「餐廳合作」區塊
+- 在「餐桌上的信任」logo 牆之後新增 `section.partner`：
+  QR code（連到生鮮葉菜供應意向書表單）＋ 網址 ＋ 一鍵複製按鈕
+- 沿用頁面既有的 `.qr` 白卡樣式，維持深綠金風格
+- 複製按鈕：`navigator.clipboard` 失敗時退回選取文字（Android 版 LINE 內建瀏覽器會擋剪貼簿）
+- 新增 `assets/qr-mou.png`
+- 意向表專案在 `~/Projects/1_進行中/1_dechi-MOU/`，線上 <https://restaurant-mou.pages.dev/>
+
 線上網址：<https://robbiechiu.github.io/about-robert/>
 Repo：`Robbiechiu/about-robert`（GitHub，public）
 
