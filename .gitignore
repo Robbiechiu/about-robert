@@ -5,3 +5,7 @@ assets/_original/
 /*.png
 /*.html
 !/index.html
+
+# 列印用/：名片與 logo 全部留本機，不進版控、不上 GitHub
+# 理由：本 repo 為 public，商標尚未註冊，未定案的設計方向不公開（2026-08-27 決定）
+列印用/
