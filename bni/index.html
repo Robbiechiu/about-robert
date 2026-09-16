@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>邱彥霖 Robert｜BNI 一對一表單與引薦請託</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --g:#2e7d4f;--g-deep:#215c39;--g-soft:#eef4f0;--g-line:#cfe0d5;
+  --ink:#111;--sub:#555;--mute:#777;--line:#e3e3e3;--rule:#999;--red:#c0392b;
+  --serif:"Noto Serif TC","Songti TC","PingFang TC",serif;
+  --sans:"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:var(--ink);font-family:var(--sans);font-size:18px;line-height:1.7;padding:0 16px 64px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto}
+a{color:var(--g)}
+
+/* ---------- hero ---------- */
+.hero{display:grid;grid-template-columns:1fr 300px;gap:32px;align-items:end;padding:40px 0 28px;border-bottom:1px solid var(--ink)}
+.hero .kicker{font-size:13px;letter-spacing:.22em;color:var(--g);font-weight:700;text-transform:uppercase;margin-bottom:14px}
+.hero h1{font-family:var(--serif);font-weight:700;font-size:44px;line-height:1.15;margin:0 0 6px;letter-spacing:.02em}
+.hero h1 span{display:block;font-size:20px;font-weight:500;color:var(--sub);letter-spacing:.04em;margin-top:6px}
+.hero .tag{font-family:var(--serif);font-size:22px;color:var(--g);margin:14px 0 18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:15px;color:var(--sub)}
+.meta b{color:var(--ink);font-weight:500}
+.hero img{width:100%;height:auto;display:block;aspect-ratio:724/1086}
+
+/* ---------- section ---------- */
+section.s{margin-top:64px}
+.sh{display:flex;align-items:baseline;gap:14px;margin-bottom:22px;padding-bottom:10px;border-bottom:1px solid var(--ink)}
+.sh .no{font-family:var(--serif);font-size:15px;color:var(--g);letter-spacing:.15em}
+.sh h2{font-family:var(--serif);font-size:28px;margin:0;line-height:1.2;font-weight:700}
+.sh .en{margin-left:auto;font-size:13px;color:var(--mute);letter-spacing:.12em;text-transform:uppercase}
+
+/* ---------- 會員資料表 ---------- */
+.group{margin-bottom:26px}
+.group h3{font-size:14px;letter-spacing:.2em;color:var(--g);font-weight:700;margin:0 0 6px;padding-left:2px}
+.rows{border-top:2px solid var(--g)}
+.row{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:12px 4px;border-bottom:1px solid var(--line)}
+.row .k{font-size:15px;color:var(--sub);padding-top:2px}
+.row .v{font-size:18px}
+.row.two{grid-template-columns:150px 1fr 130px 1fr}
+.quote{font-family:var(--serif);font-size:19px;line-height:1.75}
+.quote .k{font-size:15px;font-family:var(--sans)}
+
+/* ---------- GAINS ---------- */
+.gains{border-top:2px solid var(--g)}
+.gr{display:grid;grid-template-columns:64px 300px 1fr;gap:20px;padding:22px 4px;border-bottom:1px solid var(--line)}
+.gr .L{font-family:var(--serif);font-size:44px;line-height:1;color:var(--g);font-weight:700}
+.gr .def b{display:block;font-size:17px;margin-bottom:4px}
+.gr .def{font-size:14px;color:var(--mute);line-height:1.55}
+.gr .ans{font-size:18px}
+.gr .ans ul{margin:0;padding-left:1.2em}
+.gr .ans li{margin-bottom:6px}
+.gr .ans li:last-child{margin-bottom:0}
+.gr .ans .yr{display:inline-block;min-width:4.2em;font-family:var(--serif);color:var(--g);font-weight:700}
+
+/* ---------- 客戶表 / 人脈圈 ---------- */
+.two{display:grid;grid-template-columns:1fr 360px;gap:32px;align-items:start}
+ol.list{list-style:none;margin:0;padding:0;border-top:2px solid var(--g);counter-reset:n}
+ol.list li{counter-increment:n;display:grid;grid-template-columns:52px 1fr;gap:12px;padding:12px 4px;border-bottom:1px solid var(--line);font-size:17.5px;line-height:1.55;min-height:52px}
+ol.list li::before{content:counter(n,decimal-leading-zero);font-family:var(--serif);font-size:22px;color:var(--g);font-weight:700;line-height:1.2}
+ol.list li .cat{display:block;font-size:13px;letter-spacing:.08em;color:var(--mute);margin-bottom:2px}
+.card{background:var(--g-soft);border-top:3px solid var(--g);padding:20px 22px;font-size:16px;line-height:1.6;position:sticky;top:16px}
+.card h4{font-family:var(--serif);font-size:19px;margin:0 0 12px;color:var(--g-deep)}
+.card b.q{display:block;font-size:15px;margin:14px 0 4px;color:var(--ink)}
+.card ol,.card ul{margin:0;padding-left:1.25em}
+.card li{margin-bottom:4px}
+.card .key{color:var(--g);font-weight:700}
+.card p{margin:0}
+.card.plain{font-size:15.5px;color:var(--sub)}
+
+/* ---------- 信 ---------- */
+.letter{margin-top:80px;padding-top:48px;border-top:3px double var(--g)}
+.letter .sh{border-bottom:0;margin-bottom:6px;display:block}
+.letter .sh h2{font-size:32px}
+.letter .sub{font-size:16px;color:var(--sub);margin:0 0 32px;font-family:var(--serif)}
+.letter p{margin:0 0 14px;max-width:70ch}
+.letter h3{font-family:var(--serif);font-size:22px;color:var(--g-deep);margin:40px 0 12px;display:flex;align-items:center;gap:12px}
+.letter h3::before{content:"";width:28px;height:2px;background:var(--g);flex:none}
+.letter ul,.letter ol{margin:0 0 14px;padding-left:1.4em;max-width:70ch}
+.letter li{margin-bottom:6px}
+.lead{font-family:var(--serif);font-size:24px;line-height:1.6;color:var(--ink);margin:0 0 24px !important;max-width:32ch !important}
+.callout{background:var(--g-soft);border-left:4px solid var(--g);padding:16px 20px;margin:18px 0 22px;max-width:70ch}
+.callout p{margin:0 0 6px;font-family:var(--serif);font-size:20px}
+.callout p:last-child{margin:0}
+.callout p.n{font-family:var(--sans);font-size:17px;color:var(--sub)}
+.ask{border:1.5px solid var(--g);padding:22px 26px;margin:28px 0;max-width:70ch}
+.ask .t{font-family:var(--serif);font-size:21px;color:var(--g-deep);margin:0 0 12px}
+.ask ul{margin:0}
+.ask li b{color:var(--g)}
+.sig{margin-top:44px;padding-top:20px;border-top:1px solid var(--ink);display:grid;grid-template-columns:1fr auto;gap:16px;font-size:16px;color:var(--sub);line-height:1.7}
+.sig .n{font-family:var(--serif);font-size:22px;color:var(--ink);font-weight:700}
+.sig a{text-decoration:none}
+.sig a:hover{text-decoration:underline}
+.foot{margin-top:56px;font-size:13px;color:var(--mute);text-align:center;letter-spacing:.08em}
+
+@media (max-width:760px){
+  body{font-size:17px}
+  .hero{grid-template-columns:1fr;gap:20px;padding-top:24px}
+  .hero img{max-width:220px;justify-self:start;order:-1}
+  .hero h1{font-size:34px}
+  .sh h2{font-size:24px}
+  .sh .en{display:none}
+  .row{grid-template-columns:1fr;gap:2px}
+  .row.two{grid-template-columns:1fr}
+  .row .k{font-size:13.5px;letter-spacing:.05em}
+  .gr{grid-template-columns:44px 1fr;gap:10px 14px}
+  .gr .L{font-size:34px}
+  .gr .def{grid-column:2}
+  .gr .ans{grid-column:2}
+  .two{grid-template-columns:1fr}
+  .card{position:static}
+  ol.list li{grid-template-columns:40px 1fr;font-size:16.5px}
+  .letter h3{font-size:20px}
+  .lead{font-size:21px}
+  .sig{grid-template-columns:1fr}
+}
+@page{size:A4;margin:12mm 14mm 14mm}
+@media print{
+  body{font-size:11pt;padding:0}
+  .hero{padding-top:0}
+  .card{position:static;break-inside:avoid}
+  .row,.gr,ol.list li,.callout,.ask{break-inside:avoid}
+  .sh,.letter h3{break-after:avoid}
+  .letter{break-before:page;border-top:0;padding-top:0;margin-top:0}
+  a{color:inherit;text-decoration:none}
+}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- ===================== HERO ===================== -->
+<header class="hero">
+  <div>
+    <div class="kicker">BNI One-to-One Member Profile</div>
+    <h1>邱彥霖 <span>Robert Chiu・「生菜王子」・羅伯特農場／羅伯特農業科技 Robert Horti-Tech</span></h1>
+    <p class="tag">用歐洲規格的自動化溫室，讓台灣不再只靠天吃飯。</p>
+    <div class="meta">
+      <span>分會 <b>BNI 華泰分會</b></span>
+      <span>產業別 <b>餐飲服務組</b></span>
+      <span>表單日期 <b>2026/7/13</b></span>
+    </div>
+  </div>
+  <img src="../assets/robert-lettuce.jpeg" alt="邱彥霖 Robert 手持生菜的形象照" width="724" height="1086">
+</header>
+
+<!-- ===================== 1. 會員資料表 ===================== -->
+<section class="s">
+  <div class="sh"><span class="no">01</span><h2>會員資料表</h2><span class="en">Member Profile</span></div>
+
+  <div class="group"><h3>商業資訊</h3>
+    <div class="rows">
+      <div class="row"><div class="k">我們的發言人</div><div class="v">邱彥霖</div></div>
+      <div class="row"><div class="k">公司名稱</div><div class="v">羅伯特農場／羅伯特農業科技</div></div>
+      <div class="row"><div class="k">職業</div><div class="v">科技農業｜農場主</div></div>
+      <div class="row"><div class="k">地址</div><div class="v">369 苗栗縣卓蘭鎮西坪里 11 鄰西坪 125-10 號</div></div>
+      <div class="row"><div class="k">行業經驗</div><div class="v">7 年（科技農業）／經歷 15 年</div></div>
+      <div class="row"><div class="k">前一份工作類型</div><div class="v">鞋底模具自動化（家族產業）、世界龍頭高爾夫球具製造商－設計開發 PM（2 年）、柬埔寨地產（1 年）</div></div>
+    </div>
+  </div>
+
+  <div class="group"><h3>個人資訊</h3>
+    <div class="rows">
+      <div class="row"><div class="k">家庭資訊</div><div class="v">A 配偶：無　　B 孩子：無　　C 寵物：四隻鸚鵡</div></div>
+      <div class="row"><div class="k">業餘愛好</div><div class="v">高爾夫、氣功、瑜伽、攝影、餐飲美食、Excel 進修、AI 自動化 Claude Code</div></div>
+      <div class="row"><div class="k">感興趣活動</div><div class="v">商業連結聚會及課程、農業與自動化、高爾夫球、開發餐廳與主廚聊作物、永續經營、靈性療癒</div></div>
+      <div class="row"><div class="k">居住地</div><div class="v">台中市／淡水／英國伯明翰大學　（居住 35 年）</div></div>
+    </div>
+  </div>
+
+  <div class="group"><h3>綜合資訊</h3>
+    <div class="rows">
+      <div class="row quote"><div class="k">我強烈的願望是</div><div class="v">帶給人類健康快樂，食材由我把關，帶給大家無毒與健康的飲食文化。</div></div>
+      <div class="row quote"><div class="k">沒有人知道的秘密是</div><div class="v">為世界貢獻而創業；擁有一雙綠手指，不論動植物都能療癒生命。</div></div>
+      <div class="row quote"><div class="k">我成功的關鍵是</div><div class="v">不斷學習與更新產業在世界的脈動，調整適合的角度切入，投報分析。</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 2. GAINS ===================== -->
+<section class="s">
+  <div class="sh"><span class="no">02</span><h2>GAINS 工作表</h2><span class="en">Goals · Accomplishments · Interests · Networks · Skills</span></div>
+  <div class="gains">
+    <div class="gr"><div class="L">G</div>
+      <div class="def"><b>Goals／目標</b>目標是指公司或個人想要達到的目的或滿足你個人的要求或對你來說重要的人。你需要明確你的目標並且要對他人的目標有清楚的認識。和他人建立關係最好的方法就是幫助他們達到他們的目標！</div>
+      <div class="ans"><ul>
+        <li><span class="yr">2026</span>引進歐洲全自動化溫室，完成農業創投計劃、客戶確認簽約 MOU、募資完成。</li>
+        <li><span class="yr">2027</span>開始建造自動化農業溫室：建造、客戶簽訂長期契約。</li>
+        <li><span class="yr">2028.3</span>開始量產銷售。</li></ul></div>
+    </div>
+    <div class="gr"><div class="L">A</div>
+      <div class="def"><b>Accomplishments／成就</b>人們喜歡談論令他們感到驕傲的事。請記住，觀察他人最好的方法就是知道他們已經達到了怎樣的目標。可以從你的成就推測出你的知識、技巧、經驗和價值觀。請準備好和你會面的人分享你的成就。</div>
+      <div class="ans"><ul>
+        <li>受到多間米其林等級餐廳的肯定：台南 Mo Ristorante、台北 Logy、Inita、台中 Isola、法森小館、㕩肉舖 Pankoko 燒肉專門店。</li>
+        <li>長庚生技團體的代表人肯定：會說話的生菜、高能量的產品，帶給很多人身體的好轉反應。</li>
+        <li>CXO TC8 AI 分會會長－打造全台最會用 AI 變現的分會。</li></ul></div>
+    </div>
+    <div class="gr"><div class="L">I</div>
+      <div class="def"><b>Interests／興趣愛好</b>你的興趣愛好可以幫助你和他人建立關係。像體育運動、閱讀、聽音樂等等就是興趣愛好。人們喜歡花時間談論他們的興趣愛好。當你和你的聯繫人有相同的興趣愛好時，可以鞏固你們之間的關係。</div>
+      <div class="ans"><ul>
+        <li>高爾夫（差點 10）、球具量身定做</li>
+        <li>海外展覽、旅行、品味美食</li>
+        <li>瑜伽、氣功、上課進修、AI 企業輔導</li>
+        <li>攝影，曾辦 3 次攝影展</li></ul></div>
+    </div>
+    <div class="gr"><div class="L">N</div>
+      <div class="def"><b>Networks／人際關係</b>你有許多的人際關係，包括正式的和非正式的。一個人際關係可以是一個組織、一種制度、一家公司或你交往的個人。</div>
+      <div class="ans"><ul>
+        <li><b>台灣</b>：農業科技、餐廳、長庚生技、中國信託法金</li>
+        <li><b>柬埔寨</b>：公證處（律師）、信託公司、成立公司、政府部門溝通、第一銀行、地產</li>
+        <li><b>海外</b>：農業科技顧問（從作物篩選、溫室設計、投報分析、整合供應商、種植培訓）</li></ul></div>
+    </div>
+    <div class="gr"><div class="L">S</div>
+      <div class="def"><b>Skills／技巧</b>你對你的人際關係中的人們的天賦和能力了解得越多，你就能夠在需要的時候，更有機會找到（並引薦）合適的、實惠的產品和服務。當你試圖抓住商機的時候，越來越多的人就會了解你的技巧，這對你來說是更好的機會！</div>
+      <div class="ans"><p style="margin:0 0 6px"><b>從 0 到 1 的能力</b></p><ul>
+        <li><b>0</b>：投資報酬分析。利用心智圖針對事件分析歸納，探索產業核心問題與解決方針，搭配 Excel 數據，分析產業可行性進行決策；特別針對農業這部分有很深的著墨。</li>
+        <li><b>1</b>：落地。專案計劃與安排執行節奏，確保每個環節能夠落實。</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 3. 十位客戶表 ===================== -->
+<section class="s">
+  <div class="sh"><span class="no">03</span><h2>最近的十位客戶表</h2><span class="en">Top 10 Clients</span></div>
+  <div class="two">
+    <ol class="list">
+      <li><span><span class="cat">新鮮大量</span>餐飲集團（客戶＋投資人）：饗賓、漢來美食、王品等，自助餐類型，使用到生菜、葉菜</span></li>
+      <li><span><span class="cat">新鮮大量</span>連鎖飯店，大量使用生菜之餐飲部門</span></li>
+      <li><span><span class="cat">新鮮大量</span>空廚</span></li>
+      <li><span><span class="cat">新鮮販售 B2B2C</span>量販店：好市多、全聯、家樂福、大潤發等</span></li>
+      <li><span><span class="cat">新鮮販售 B2B2C</span>便利商店：統一集團、全家等開始販售生鮮</span></li>
+      <li><span><span class="cat">新鮮販售 B2B2C</span>生機飲食門市（如統一有機超市聖德克斯、長庚生技、永豐餘食品）</span></li>
+      <li><span><span class="cat">長保鮮期</span>生技工廠、冷凍飲品（綠拿鐵）等契作供生技產品使用</span></li>
+      <li><span><span class="cat">平台</span>冷鏈、運輸食品的平台：協助農場到餐廳的媒合、運輸、銷售</span></li>
+      <li><span><span class="cat">永續</span>銀行永續經營單位，可以整合碳匯、永續、ESG</span></li>
+      <li><span><span class="cat">永續</span>工廠或企業，如有排放二氧化碳，未來可協助吸收二氧化碳或碳交易等資源</span></li>
+    </ol>
+    <aside class="card">
+      <h4>客戶提示</h4>
+      <b class="q">他們來自哪裡？</b>
+      <ol><li>不穩定的生菜品質、葉菜來了就爛，保存期限很短，一週需要 3 次以上配送，同時需要大量人力與時間挑選可用食材，還有蟲害問題。</li>
+      <li>價格受到氣候波動變化大。</li></ol>
+      <b class="q">你能為他們做什麼？</b>
+      <ul><li><span class="key">產能</span>：每公頃，每月 110 噸的客製化截切生菜組合</li>
+      <li><span class="key">契作</span>：週年穩定價格</li>
+      <li><span class="key">耐保存</span>：生菜保存 21 天，降低損耗與運輸（次數）成本</li>
+      <li><span class="key">Ready to Wash</span>：節省人力整理、挑菜和洗菜時間，可節省備菜 85% 時間，直接上桌</li></ul>
+      <b class="q">他們是你最常接觸的客戶嗎？</b>
+      <p>目前不是。</p>
+      <b class="q">在此處為你十位客戶備註</b>
+      <ul><li><span class="key">好引薦</span>：10～20 間左右的連鎖，美式、燒肉、火鍋店</li>
+      <li><span class="key">理想引薦</span>：每月需求 20 噸葉菜的餐飲集團、飯店、量販店、統一、生機門市</li>
+      <li><span class="key">夢幻引薦</span>：A. 資金：願意投入農業的資金、創投基金、銀行。B. 土地：需求約 2 公頃，溫室 100m × 170m</li></ul>
+    </aside>
+  </div>
+</section>
+
+<!-- ===================== 4. 業務人脈圈 ===================== -->
+<section class="s">
+  <div class="sh"><span class="no">04</span><h2>業務人脈圈</h2><span class="en">Contact Sphere</span></div>
+  <div class="two">
+    <ol class="list">
+      <li><span>生鮮蔬果：水果、蔬菜如蕃茄、小黃瓜、節瓜等，其他蔬菜</span></li>
+      <li><span>肉品：新鮮肉品與海鮮</span></li>
+      <li><span>食品進出口供應商：調味醬料、油品、醋、醬料，以及食品類堅果、果乾等，可以結合搭配推廣到超市</span></li>
+      <li><span>食品罐頭：可將食品做成醬料，放置罐頭銷售，如甜羅勒醬、番茄醬等</span></li>
+      <li><span>食品器具，例如蔬菜瀝水器、保鮮盒</span></li>
+      <li><span>食品處理烘乾廠：可以將食物做烘乾，增加保存期限，如有香草類，將其打碎、烘乾保存</span></li>
+      <li><span>冷凍食品，可打開加熱、打果汁即可食用</span></li>
+      <li><span>農業產銷合作社</span></li>
+      <li><span>&nbsp;</span></li>
+      <li><span>&nbsp;</span></li>
+    </ol>
+    <aside class="card plain">業務人脈圈是由行業或職業建立起來的，為個人提供引薦的來源。它們之間有著某種聯繫但又不具有競爭性，同一個業務人脈圈內的行業具有互相支持和增強的共生性。</aside>
+  </div>
+</section>
+
+<!-- ===================== 5. 信 ===================== -->
+<section class="letter">
+  <div class="sh"><span class="no">05</span><h2>給 BNI 董事顧問／執行董事的一封信</h2></div>
+  <p class="sub">我看到的問題，以及我需要的引薦</p>
+
+  <p>董顧您好，</p>
+  <p>我簡單介紹一下我的背景，並描述我現在遇到的狀況。可能有點冗長，還請多多指教。</p>
+
+  <h3>一、我看到的問題</h3>
+  <p class="lead">不知道您有沒有發現，最近便當裡面都沒有綠色蔬菜？</p>
+  <p>一般人可能沒什麼感覺，但這其實是從產地到餐桌的整個產業鏈上，出現了一個最嚴重的底層邏輯問題：</p>
+  <div class="callout"><p>台灣農業生產上，一直只靠天吃飯＋進口替代。</p></div>
+  <p>改善的方法，台灣一定要邁向<b>農業工業化</b>之路——可以週年穩定生產、降低菜價，整個餐飲產業鏈才會健康。</p>
+
+  <h3>二、我是誰</h3>
+  <p>我是工業背景，2019 年因疫情轉投入農業，反而找到了我的使命：<b>打造安全無毒的食物，讓每個人都健康快樂。</b></p>
+  <p>我 2025 年加入 BNI，但在加入後 3 個月，毅然決然把自己的農場歇業。</p>
+  <p>為什麼？我當時使用台灣的農業技術，蟲害、病害讓我無法穩定生產。這幾年我走訪歐洲考察種植、深度了解整個產業鏈的結構，決定認真<b>把歐洲的農業生產技術複製到台灣來</b>。</p>
+  <p>我會加入 BNI，也是希望來找資源。在 BNI 的 1.5 年之中，我並沒有商品可以銷售，所以沒有資金上的收穫，但擔任過幹部：</p>
+  <ul><li>接待組組長</li><li>產業別組長：餐飲服務組組長</li></ul>
+  <p>協助大家有更多的引薦機會，因此在人脈上肯定比過往豐富許多。</p>
+
+  <h3>三、我要做的事，卡在哪裡</h3>
+  <p>我要複製歐洲高科技溫室生產系統到台灣。沒有一公頃的最小經濟規模，歐洲方不願意來。</p>
+  <div class="callout">
+    <p>這個最小規模需要 8 億來啟動——這是我的超級夢幻引薦。</p>
+    <p class="n">然而台灣資本市場不懂或害怕：幾乎全部投入高科技產業；對農業可能想投，卻也不敢投。</p>
+  </div>
+  <p>另一個面向是<b>客戶</b>。我需要客戶端的資源來整合（簽訂生菜供應的 MOU），希望打進更多的餐飲集團、好市多等等，讓更多人吃到安全無毒的食物。</p>
+  <p><b>策略：</b>我最少先取得兩間以上大企業的 MOU 後，會開始跟歐洲農企業洽談：讓我的歐洲顧問和溫室公司來台投資，並整合台灣企業主一起投資。</p>
+  <p><b>目前進度：</b>下週將和 Subway 簽訂生菜採購意向書，緊接著找摩斯漢堡。</p>
+
+  <h3>四、農業藍圖：農業金三角</h3>
+  <p>我的規劃藍圖，是打造「農業金三角」——由我來整合國內外的高科技農業技術，打造一個平台：</p>
+  <ol>
+    <li><b>訓練台灣年輕人</b>，願意投入高科技農業，讓台灣不會只有電子高科技產業。</li>
+    <li><b>穩定台灣食材和餐飲的價格</b>，讓餐廳可以有穩定的獲利。</li>
+    <li><b>高科技農業供應鏈整合</b>——需要台灣工業的能力：自動化設備、零組件、溫室鋼鐵和玻璃產業。</li>
+    <li><b>長期計劃：一起打包到海外。</b></li>
+  </ol>
+
+  <h3>五、想請教您的</h3>
+  <div class="ask">
+    <p class="t">要怎麼樣運用 BNI 系統，有機會達成這個夢幻引薦——資金、客戶，和未來的藍圖？</p>
+    <p>如果您身邊有以下的人，懇請引薦：</p>
+    <ul>
+      <li><b>資金</b>：願意投入農業的企業主、家族辦公室、創投基金、銀行永續／ESG 單位</li>
+      <li><b>客戶</b>：每月需求 20 噸以上葉菜的餐飲集團、飯店、量販店、生機通路</li>
+      <li><b>更高位階的 BNI 夥伴，以及 CC 的人脈</b>，讓我有機會把這個藍圖講給對的人聽</li>
+    </ul>
+  </div>
+
+  <div class="sig">
+    <div>
+      <div class="n">羅伯特　邱彥霖 Robert</div>
+      羅伯特農場／羅伯特農業科技 Robert Horti-Tech<br>
+      BNI 華泰分會・餐飲服務組
+    </div>
+    <div>
+      <a href="tel:+886931347988">0931-347-988</a><br>
+      <a href="mailto:robert.horti.tech@gmail.com">robert.horti.tech@gmail.com</a><br>
+      <a href="https://robbiechiu.github.io/about-robert/">完整簡介 robbiechiu.github.io/about-robert</a>
+    </div>
+  </div>
+</section>
+
+<div class="foot">ROBERT HORTI-TECH · 2026</div>
+</div>
+</body>
+</html>
