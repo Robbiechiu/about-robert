@@ -1,5 +1,13 @@
 # CHANGELOG — 羅伯特農業科技 數位名片頁
 
+## 2026-10-01 — 聯絡區塊最下方加 Turri 橄欖油訂購連結
+- 「與我聯絡」區塊 WeChat QR 卡之後新增 `div.shop-block`：上分隔線＋小標「另外也歡迎逛逛」，
+  底下一張連結卡「義大利 TURRI 橄欖油 / 線上訂購 →」，連到 <https://turri-order.pages.dev/>
+- 沿用既有 `.info` 卡片樣式（與電話／Email／地址同一套），只新增 `.shop-block` 的分隔線與間距
+- 刻意用次級卡片樣式而非金色實心按鈕：金色大按鈕保留給「一鍵存入通訊錄」這個主行動
+- 中英兩頁同步（英文頁小標 = `Also worth a look`、卡片 `TURRI Olive Oil, Italy / Order online →`）
+- 訂購頁專案在 `~/Projects/1_進行中/30_turri-橄欖油訂購/`
+
 ## 2026-08-21 — 新增「餐廳合作」區塊
 - 在「餐桌上的信任」logo 牆之後新增 `section.partner`：
   QR code（連到生鮮葉菜供應意向書表單）＋ 網址 ＋ 一鍵複製按鈕
