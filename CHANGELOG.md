@@ -6,7 +6,7 @@
 - 沿用頁面既有的 `.qr` 白卡樣式，維持深綠金風格
 - 複製按鈕：`navigator.clipboard` 失敗時退回選取文字（Android 版 LINE 內建瀏覽器會擋剪貼簿）
 - 新增 `assets/qr-mou.png`
-- 意向表專案在 `~/Projects/1_進行中/1_dechi-MOU/`，線上 <https://restaurant-mou.pages.dev/>
+- 意向表專案在 `~/Projects/1_進行中/1-1.德馳-MOU餐廳意向書/`，線上 <https://restaurant-mou.pages.dev/>
 
 線上網址：<https://robbiechiu.github.io/about-robert/>
 Repo：`Robbiechiu/about-robert`（GitHub，public）
