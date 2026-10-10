@@ -1,5 +1,11 @@
 # CHANGELOG — 羅伯特農業科技 數位名片頁
 
+## 2026-10-10 — 意向書連結改指向 B 版
+- 「餐廳合作」區塊的連結、複製框網址都改成 <https://restaurant-mou.pages.dev/?v=b>
+- 重產 `assets/qr-mou.png`（同色 `#2e7d4f`、740px），cv2 反解確認掃出 `?v=b`
+- B 版是同一份意向書用參數切換（徠澳／LAYR 聯名），不是另一個檔
+- 英文頁沒有意向書區塊，不用改；紙本名片 QR 連的是名片首頁，不用重印
+
 ## 2026-10-01 — 聯絡區塊最下方加 Turri 橄欖油訂購連結
 - 「與我聯絡」區塊 WeChat QR 卡之後新增 `div.shop-block`：上分隔線＋小標「另外也歡迎逛逛」，
   底下一張連結卡「義大利 TURRI 橄欖油 / 線上訂購 →」，連到 <https://turri-order.pages.dev/>
